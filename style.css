@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", serif;
+  background: #f5f5f5;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100%; 
+  width: 1240px;
+  margin: auto;
+  box-sizing: border-box; 
+  /*grid-template-rows: 1fr 80px 80px 250px;*/
+}
+
+.main > div {
+  max-width: 100%; 
+  min-width: 0; 
+  overflow: hidden;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.social-media {
+  grid-column: 2 / 4;
+  background: hsl(256, 67%, 59%);
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.social-media h1 {
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+  margin: auto !important;
+  font-weight: 500;
+  line-height: 58px;
+  padding: 20px 0;
+}
+
+.social-media img {
+  margin: auto;
+  width: 33%;
+}
+
+.social-media p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.764);
+ 
+}
+
+.schedule-social {
+  grid-column: 4;
+  grid-row: 1/4;
+  background: hsl(254, 88%, 90%);
+  padding: 1.7rem 2rem !important;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.schedule-social h2 {
+  font-size: 2.5rem;
+  line-height: 35px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+}
+
+.schedule-social p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 15px;
+}
+
+.schedule-social img {
+  height: 268px;
+  width: 179%;
+  margin: 10px 0;
+}
+
+.schedule-quicker {
+  grid-row: 1/span 2;
+  grid-column: 1;
+  background: hsl(31, 66%, 93%);
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.schedule-quicker h2 {
+  font-size: 2.5rem;
+  line-height: 35px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding: 0.9rem;
+}
+
+.schedule-quicker img {
+  max-width: 80%;
+  margin-bottom: 1rem;
+}
+
+.grow-follwers {
+  grid-column: 3 / -1;
+  grid-row: 4;
+  background: hsl(256, 67%, 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow-follwers img {
+  width: 50%;
+}
+.grow-follwers h2 {
+  color: hsl(0, 0%, 100%) ;
+}
+
+.audience-growth {
+  grid-column: 2 / 3;
+  grid-row: 4;
+  background: hsl(0, 0%, 100%);
+}
+
+.audience-growth h2 {
+  font-size: 3rem !important;
+  padding-top: 20px;
+}
+
+.audience-growth p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 0px 30px 0px;
+}
+
+.content-ai {
+  grid-row: 3/5;
+  grid-column: 1;
+  background: hsl(39, 100%, 71%);
+}
+
+.content-ai h2 {
+  margin-bottom: 30px;
+}
+
+.posting-shedule {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    background: hsl(39, 100%, 71%);
+    height: 250px;
+}
+
+.posting-shedule h2 {
+  margin-bottom: 20px;
+}
+.multiple-platforms h2 {
+  margin-top: 20px;
+}
+
+.multiple-platforms {
+  grid-row: 2 / 4;
+  background:hsl(0, 0%, 100%) ;
+}
+.multiple-platforms img {
+  width: 361px;
+}
+
+
+.main > div h1, h2, p {
+  margin: 0;
+}
+
+.main > div h2 {
+  font-size: 2.5rem;
+  line-height: 35px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+
+@media screen and (max-width:1220px){
+  
+  html {
+    font-size: 13px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .social-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .multiple-platforms {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.posting-shedule {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.schedule-social {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.grow-follwers {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.audience-growth {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.schedule-quicker {
+  grid-row: 7;
+  grid-column: 1;
+}
+
+.content-ai {
+  grid-row: 8;
+  grid-column: 1;
+
+}
+
+.grow-follwers {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grow-follwers h2 {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.schedule-social img {
+  height: auto;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.social-media img {
+  width: 65%;
+}
+
+.main > div p {
+  font-size: 1.3rem;
+}
+
+.multiple-platforms img {
+  width: 100%;
+}
+
+}
